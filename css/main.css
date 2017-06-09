@@ -1,3 +1,20 @@
+/*inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF*/
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,29 +24,46 @@ body {
   font-family: 'PT Sans', sans-serif;
   color: #0B1942;
 }
+
+a {
+  cursor: pointer;
+}
+/*@media screen (min-width: 545px) {
+
+}*/
 /************************* Home page ***************************/
 /*--------------- top navigation -----------------*/
 
 nav {
   display: flex;
+  height: 115px;
+  width: 100vw;
 }
 nav div {
   display: flex;
   height: 100%;
 }
+
 nav div a{
-  font-size: 35px;
-  display: flex;
   text-decoration: none;
   color: #FFF;
   justify-content: center;
-  padding: 1.8%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-img img {
+  height: 80%;
+  width: 80%;
 }
 .nav-img {
   background-color: #F5005B;
-  padding: 2%;
-  justify-content: center;
+  height: 115px;
+  flex-basis: 1;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 .nav-home {
   background-color: #00A5BF;
@@ -41,42 +75,50 @@ nav div a{
   background-color: #00D5E7;
 }
 .nav-list {
-  width: 100%;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-basis: 4;
+  font-size: 14px;
 }
+
+/*@media (min-width: 545px) {
+
+}*/
 
 /* ----------------- block - a ----------------*/
 
 .block-a {
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .block-a div {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .involve {
-  font-size: 30px;
+  font-size: 14px;
   font-weight: 200;
 }
 
 .blue-background {
   background-color: #0B1942;
   color: #FFF;
-  font-size: 25px;
+  /*font-size: 25px;*/
 }
 
 .blue-background h2 {
-  margin: 5px 30px;
+  margin: 5px 3%;
   font-weight: 300;
 }
 
 .content-a {
-  line-height: 60px;
-  font-size: 14px;
+  line-height: 22px;
+  font-size: 12px;
 }
+
 
 
 
@@ -84,19 +126,19 @@ nav div a{
 
 .block-b {
   background-color: #0B1942;
-  padding: 50px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .up-next {
   color: #FFF;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 5%;
-  font-weight: 700;
 }
+
 .up-next h1 {
-  font-size: 80px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -104,38 +146,44 @@ nav div a{
 
 .box-flex {
   display: flex;
-  justify-content: space-around;
 }
 
 .box-b1 {
   background-color: #FFF;
-  padding: 4%;
-  margin-bottom: 6%;
+  padding: 3%;
+  margin-bottom: 4%;
+
 }
+
 .b1-content {
-  flex: 1 1 40%;
-  font-size: 40px;
+  flex: 1 1 25%;
+  font-size: 12px;
 }
+
 .b1-content img {
   width: 90%;
 }
+
 .b1-content p {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .line {
-  border-top: 3px solid black;
-  padding-top: 30px;
+  border-top: 1px solid black;
+  padding-top: 10px;
 }
+
 .b1-content a {
-  font-size: 50px;
+  font-size: 16px;
   color: #00B7D3;
 }
 
 .rashomon-list {
-  font-size: 35px;
+  font-size: 12px;
   list-style-type: circle;
 }
+
 .rashomon-list li {
   padding: 2%;
   margin-left: 10%;
@@ -145,7 +193,7 @@ nav div a{
 
 .box-b2 {
   background-color: #FFF;
-  padding: 4%;
+  padding: 3%;
 }
 
 .movie-posters {
@@ -159,7 +207,7 @@ nav div a{
   flex-direction: column;
   justify-content: flex-start;
   padding: 2%;
-  font-size: 30px;
+  font-size: 12px;
   flex: 1 1 50%;
 }
 
@@ -168,7 +216,7 @@ nav div a{
 }
 
 .poster-column a {
-  margin: 20px 0px;
+  margin: 10px 0px;
   color: #00B7D3;
 }
 
@@ -182,9 +230,9 @@ nav div a{
 .bottom-nav a {
   text-align: center;
   color: #FFF;
-  padding: 2%;
-  font-size: 35px;
+  padding: 3%;
   text-decoration: none;
+  font-size: 14px;
 }
 
 
@@ -193,10 +241,11 @@ nav div a{
 .footer {
   background-color: #81DFE7;
 }
+
 .footer p {
   text-align: center;
-  font-size: 30px;
   color: #FFF;
+  font-size: 12px;
   padding: 5%;
 }
 
@@ -216,78 +265,133 @@ nav div a{
 }
 
 .join-head h1 {
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 .upload-file {
-  font-size: 40px;
+  font-size: 16px;
 }
 .choose-file {
-  font-size: 30px;
+  font-size: 16px;
 }
 
 .profile-placeholder {
   display: flex;
+  justify-content: center;
 }
 
 .profile-placeholder img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+
 }
 
 .form-fields {
   display: flex;
   flex-direction: column;
-  font-size: 35px;
+  font-size: 16px;
 }
 
 .form-fields input {
-  margin-top: 10px;
-  line-height: 60px;
-  font-size: 35px;
+  margin-top: 5px;
+  line-height: 25px;
+  font-size: 16px;
   border: gray 1px solid;
 }
 
 .which-genres p {
-  font-size: 35px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
 .checkboxes {
-  font-size: 35px;
+  font-size: 16px;
 }
 
 .checkboxes input {
-  margin-bottom: 50px;
-  margin-left: 2%;
+  margin-bottom: 20px;
+  margin-left: 1%;
   width: 25px;
-  height: 25px;
+  height: 15px;
 }
 
 .additional-input {
-  font-size: 35px;
+  font-size: 16px;
   margin: 2% 0%;
 
 }
 .additional-input input {
   border: gray 1px solid;
   width: 100%;
-  height: 200px;
-  font-size: 30px;
+  height: 50px;
+  font-size: 14px;
   margin-top: 1%;
 }
 
 .join-button button {
-  margin-top: 60px;
+  margin-top: 20px;
   background-color: #F5005B;
   padding: 5% 3%;
   color: #FFF;
-  font-size: 35px;
+  font-size: 16px;
   border-style: none;
   font-weight: 300;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+
+
+/************************** calendar page;*********************/
+
+.calendarHead {
+  color: #0B1942;
+  padding: 5%;
+}
+.calendarHead h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.calendarJune {
+  background-color: #0B1942;
+  color: #FFF;
+  padding: 5%;
+}
+.calendarJune h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.calendarMain {
+  background-color: #0B1942;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.calendarBox {
+  background-color: #FFF;
+  margin: .5%;
+  flex: 1 1 12%;
+  height: 50px;
+}
+.calendarDate {
+  background-color: #0B1942;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.calendarDate p {
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.calendarFill {
+  background-color: #0B1942;
+  margin: .5%;
+  flex: 1 1 12%;
+  height: 50px;
 }
