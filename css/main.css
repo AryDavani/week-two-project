@@ -29,18 +29,6 @@ a {
   cursor: pointer;
 }
 
-/* -------------------------- Break Points --------------------------- */
-
-@media screen and (min-width: 545px) {
-  nav {
-    display: flex;
-    height: 115px;
-  }
-  nav-list {
-    flex-direction: row;
-    flex: 1 1 20%;
-  }
-}
 
 
 /************************* Home page ***************************/
@@ -94,7 +82,6 @@ nav div a{
   font-size: 14px;
 }
 
-/*@media (min-width: 545px) {
 
 }*/
 
@@ -132,9 +119,8 @@ nav div a{
 }
 
 
-
-
 /* ----------------- block - b ----------------*/
+
 
 .block-b {
   background-color: #0B1942;
@@ -164,7 +150,6 @@ nav div a{
   background-color: #FFF;
   padding: 3%;
   margin-bottom: 4%;
-
 }
 
 .b1-content {
@@ -297,7 +282,6 @@ nav div a{
   border-radius: 50%;
   width: 100%;
   height: 100%;
-
 }
 
 .form-fields {
@@ -317,7 +301,6 @@ nav div a{
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 .checkboxes {
@@ -334,12 +317,12 @@ nav div a{
 .additional-input {
   font-size: 16px;
   margin: 2% 0%;
-
 }
+
 .additional-input input {
   border: gray 1px solid;
-  width: 100%;
-  height: 50px;
+  /*width: 100%;*/
+  /*height: 50px;*/
   font-size: 14px;
   margin-top: 1%;
 }
@@ -406,4 +389,20 @@ nav div a{
   margin: .5%;
   flex: 1 1 12%;
   height: 50px;
+}
+
+/* -------------------------- Break Points --------------------------- */
+
+@media (min-width: 545px) {
+  .nav {
+    display: flex;
+    height: 215px;
+  }
+  .nav-list {
+    flex-direction: row;
+    flex: 1 1 20%;
+  }
+  .nav-join {
+    background-color: black;
+  }
 }
