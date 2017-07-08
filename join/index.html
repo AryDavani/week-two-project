@@ -32,18 +32,18 @@
       <h1>Join Film Club</h1>
     </div>
 
-    <div class="upload-file">
-      <label for="profile-pic">profile picture</label><br>
-      <input id="profile-pic" class="choose-file" type="file" name="profile" value="">
-    </div>
+    <div class="join-form-flex">
+      <div class="join-form">
+        <div class="upload-file">
+          <label for="profile-pic">profile picture</label><br>
+          <input id="profile-pic" class="choose-file" type="file" name="profile" value="">
+        </div>
+        <div class="profile-placeholder">
+          <img src="../images/profile-placeholder.png" alt="placeholder">
+        </div>
+      </div>
 
-    <div class="profile-placeholder">
-      <img src="../images/profile-placeholder.png" alt="placeholder">
-    </div>
-
-    <div class="join-form">
-      <form class="" action="index.html" method="post">
-
+      <div class="join-form">
         <div class="form-fields">
           <label for="name">name</label>
           <input id="name" type="text" name="name" value="">
@@ -63,11 +63,12 @@
           <label for="confirm">confirm password</label>
           <input id="confirm" type="password" name="confirm-pass" value="">
         </div>
-
+      </div>
+    </div>
+      <div>
         <div class="which-genres">
           <p>Which genres are you interested in?</p>
         </div>
-
         <div class="checkboxes">
           <input id="action" type="checkbox" name="genres" value="">
           <label for="action">action</label><br>
@@ -92,38 +93,32 @@
           <input id="western" type="checkbox" name="genres" value="">
           <label for="western">western</label><br>
         </div>
+      </div>
 
         <div class="additional-input">
           <label for="additional">Additional input</label><br>
-          <input id="additional" type="textarea" name="additional-input" value="">
+          <input id="additional" type="textbox" name="additional-input" value="">
         </div>
 
         <div class="join-button">
           <button type="submit" name="button">Join Film Club</button>
         </div>
-      </form>
     </div>
-
-
-
   </main>
 
 
   <!-- bottom nav -->
 
-  <div class="">
+  <div class="flex">
     <div class="bottom-nav">
-      <a class="nav-home" href="../index.html">Home</a>
-      <a class="nav-cal" href="../calendar/index.html">Calendar</a>
-      <a class="nav-join" href="index.html">Join</a>
+      <a class="nav-home" href="index.html">Home</a>
+      <a class="nav-cal" href="calendar/index.html">Calendar</a>
+      <a class="nav-join" href="join/index.html">Join</a>
     </div>
-  </div>
-
-  <footer>
     <div class="footer">
       <p>2017, Film Club</p>
     </div>
-  </footer>
+  </div>
 
 </body>
 </html>
