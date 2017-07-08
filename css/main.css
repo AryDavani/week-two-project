@@ -60,6 +60,7 @@ nav div a{
 .nav-img {
   background-color: #F5005B;
   height: 115px;
+  width: 115px;
   flex-basis: 1;
   display: flex;
   align-items: center;
@@ -152,7 +153,7 @@ nav div a{
 
 .b1-content {
   flex: 1 1 25%;
-  font-size: 12px;
+  font-size: 2.5vw;
 }
 
 .b1-content img {
@@ -170,12 +171,12 @@ nav div a{
 }
 
 .b1-content a {
-  font-size: 16px;
+  font-size: 6vw;
   color: #00B7D3;
 }
 
 .rashomon-list {
-  font-size: 12px;
+  font-size: 3vw;
   list-style-type: circle;
 }
 
@@ -391,6 +392,28 @@ nav div a{
 
 /* -------------------------- Break Points --------------------------- */
 
-/*@media only screen and (min-width: 545px) {
-
-}*/
+@media only screen and (min-width: 545px) {
+  .nav-list {
+    flex-direction: row;
+    height: 100%;
+    font-size: 14px;
+    flex: 1 1 20%;
+  }
+  .get-involved-breakpoint {
+    display: flex;
+    justify-content: space-around;
+  }
+  .block-a-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30vw;
+  }
+  .poster-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2%;
+    font-size: 12px;
+    flex: 1 1 20%;
+  }
+}
